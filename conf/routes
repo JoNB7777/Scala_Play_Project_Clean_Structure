@@ -1,3 +1,36 @@
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
+GET     /                           controllers.HomeController.index
+
+GET     /help                       controllers.HomeController.help
+
+GET     /infinite                   controllers.HomeController.infinite
+
+GET     /unimplemented              controllers.HomeController.unimplemented
+
+GET     /ashtml                     controllers.HomeController.asHtml
+
+GET     /astexthtml                 controllers.HomeController.asTextHtml
+
+GET     /differentcharset           controllers.HomeController.differentCharset
+
+GET     /usecookies                 controllers.HomeController.useCookie
+
+GET     /returncookie               controllers.HomeController.returnCookie
+
+GET     /deletecookie               controllers.HomeController.deleteCookie
+
+GET     /returnsessionvalue         controllers.HomeController.returnSessionValue
+
+GET     /deletesessionvalue         controllers.HomeController.returnAndDeleteSessionValue
+
+GET     /read                       controllers.HomeController.read
+
+GET     /write                      controllers.HomeController.write
+
+POST    /bodyparser                 controllers.HomeController.bodyParser
+
+POST    /jsonbodyparser             controllers.HomeController.specifiedBodyparser
+
+GET     /jsonbodyparser             controllers.HomeController.specifiedBodyparser
       
